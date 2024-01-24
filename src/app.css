@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: 200 9% 7%;
+	--foreground: 213 31% 91%;
+	--muted: 220 11% 11%;
+	--muted-foreground: 215 16.3% 56.9%;
+	--popover: 224 71% 4%;
+	--popover-foreground: 215 20.2% 65.1%;
+	--card: 240, 5%, 16%;
+	--card-foreground: 222.2 47.4% 11.2%;
+	--border: 210 7% 12%;
+	--input: 216 34% 17%;
+	--primary: 210 40% 98%;
+	--primary-foreground: 222.2 47.4% 1.2%;
+	--secondary: 222.2 47.4% 11.2%;
+	--secondary-foreground: 210 40% 98%;
+	--accent: 261 82% 58%;
+	--accent-foreground: 208, 100%, 51%;
+	--destructive: 0 63% 31%;
+	--destructive-foreground: 210 40% 98%;
+	--ring: 216 34% 17%;
+	--radius: 0.5rem;
+
+	--font-sans: 'Inter';
+}
+
+* {
+	border-color: hsl(var(--border));
+}
+
+a {
+	@apply transition-colors;
+}
+
+a:hover {
+	color: hsl(var(--accent-foreground));
+}
+
+.text-gradient {
+	background: linear-gradient(
+		to right,
+		hsl(var(--foreground)) 0%,
+		hsl(var(--muted-foreground)) 30%,
+		hsl(var(--foreground)) 70%,
+		hsl(var(--foreground)) 80%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	background-size: 500% auto;
+	animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+	0% {
+		background-position: 0 50%;
+	}
+	to {
+		background-position: 100% 50%;
+	}
+}
