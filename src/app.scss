@@ -18,13 +18,20 @@
 	--secondary: 222.2 47.4% 11.2%;
 	--secondary-foreground: 210 40% 98%;
 	--accent: 261 82% 58%;
-	--accent-foreground: 208, 100%, 51%;
+	--accent-foreground: 208, 100%, 100%;
 	--destructive: 0 63% 31%;
 	--destructive-foreground: 210 40% 98%;
 	--ring: 216 34% 17%;
 	--radius: 0.5rem;
 
 	--font-sans: 'Inter';
+	--link: 208, 100%, 51%;
+	--accent-light: 208, 100%, 51%;
+}
+
+::selection {
+	background-color: #bada55;
+	color: #000;
 }
 
 * {
@@ -36,7 +43,7 @@ a {
 }
 
 a:hover {
-	color: hsl(var(--accent-foreground));
+	color: hsl(var(--link));
 }
 
 .text-gradient {
@@ -61,5 +68,21 @@ a:hover {
 	}
 	to {
 		background-position: 100% 50%;
+	}
+}
+
+.post {
+	h1 {
+		@apply my-7 text-2xl;
+	}
+	h2 {
+		@apply my-7 text-xl;
+	}
+	p {
+		@apply my-5;
+	}
+
+	.shiki {
+		@apply p-5 rounded-2xl shadow-xl overflow-x-auto border;
 	}
 }

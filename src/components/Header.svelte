@@ -18,9 +18,9 @@
 			class="rounded-lg border p-1 px-3">Resumé</a
 		>
 		<a
-			href="/posts"
-			class:bg-muted={$page.url.pathname === '/posts'}
-			class="rounded-lg border p-1 px-3">Posts</a
+			href="/blog"
+			class:bg-muted={$page.url.pathname === '/blog'}
+			class="rounded-lg border p-1 px-3">Blog</a
 		>
 	</nav>
 </header>

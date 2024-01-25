@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main class="mx-auto max-w-screen-md p-8 py-[10vh]">
-	<p class="text-sm text-accent-foreground uppercase">Resumé</p>
+	<p class="text-sm text-accent-light uppercase">Resumé</p>
 	<h1 class="text-2xl">Adam Alberty</h1>
 	<p class="mt-5 text-muted-foreground">
 		Programmer mostly focusing on the Web with more than 3 years of experience and a desire to
@@ -23,7 +23,7 @@
 		<a
 			href="/alberty-resume.pdf"
 			target="_blank"
-			class="flex items-center gap-2 bg-accent p-2 px-4 mr-5 rounded-lg hover:text-foreground focus:text-foreground"
+			class="flex items-center gap-2 bg-accent text-accent-foreground p-2 px-4 mr-5 rounded-lg hover:text-accent-foreground focus:text-accent-foreground"
 		>
 			<IconDownload />
 			<span>View as PDF</span>
