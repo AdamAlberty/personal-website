@@ -56,9 +56,9 @@
 
 						<ul class="flex flex-wrap gap-2">
 							{#each project.tags as tag, idx}
-								<div class:hidden={idx > 1} class="text-sm text-muted-foreground md:block">
+								<li class:hidden={idx > 1} class="text-sm text-muted-foreground md:block">
 									#{tag}
-								</div>
+								</li>
 							{/each}
 						</ul>
 					</div>
