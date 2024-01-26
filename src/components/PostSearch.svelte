@@ -56,6 +56,7 @@
 			<button
 				on:click={() => handleSearch(query)}
 				class="rounded-full bg-muted mr-2 p-2 outline-none focus:bg-accent transition-colors"
+				aria-label="Search for posts"
 			>
 				<SearchIcon />
 			</button>

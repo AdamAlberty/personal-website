@@ -31,7 +31,7 @@
 
 		<div class="flex items-center gap-5 md:mt-0">
 			{#each contacts as contact}
-				<a href={contact.link}>
+				<a aria-label={contact.name} href={contact.link}>
 					<svelte:component this={contact.icon} />
 				</a>
 			{/each}
@@ -127,9 +127,9 @@
 
 						<ul class="flex flex-wrap gap-2">
 							{#each project.tags as tag, idx}
-								<div class:hidden={idx > 1} class="text-sm text-muted-foreground md:block">
+								<li class:hidden={idx > 1} class="text-sm text-muted-foreground md:block">
 									#{tag}
-								</div>
+								</li>
 							{/each}
 						</ul>
 					</div>
