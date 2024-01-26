@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TableOfContents from '$components/TableOfContents.svelte';
 	import { formatDate } from '$lib/utils';
 
 	export let data;
@@ -6,10 +7,12 @@
 
 <!-- SEO -->
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>{data.meta.title} - Adam Alberty</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
+
+<TableOfContents />
 
 <article class="mx-auto max-w-screen-md p-8 py-[10vh]">
 	<!-- Title -->
@@ -19,14 +22,14 @@
 	</hgroup>
 
 	<!-- Tags -->
-	<div class="flex flex-wrap gap-3">
+	<div class="flex flex-wrap gap-2 text-sm">
 		{#each data.meta.categories as category}
-			<span class="px-3 py-1 rounded-full border mt-5">{category}</span>
+			<span class="px-3 py-1 rounded-full border mt-5 bg-muted">{category}</span>
 		{/each}
 	</div>
 
 	<!-- Post -->
-	<div class="post leading-loose">
+	<div class="post leading-loose md:text-lg mt-[5vh]">
 		<svelte:component this={data.content} />
 	</div>
 </article>

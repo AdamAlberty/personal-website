@@ -27,6 +27,8 @@
 	--font-sans: 'Inter';
 	--link: 208, 100%, 51%;
 	--accent-light: 208, 100%, 51%;
+
+	--post-link: 74, 64%, 59%;
 }
 
 ::selection {
@@ -44,6 +46,10 @@ a {
 
 a:hover {
 	color: hsl(var(--link));
+}
+
+a:focus {
+	outline: 1px solid hsl(var(--accent-light));
 }
 
 .text-gradient {
@@ -73,13 +79,18 @@ a:hover {
 
 .post {
 	h1 {
-		@apply my-7 text-2xl;
+		@apply my-7 -mt-32 pt-40 text-2xl md:text-3xl font-medium;
 	}
 	h2 {
-		@apply my-7 text-xl;
+		@apply my-7 -mt-32 pt-40 text-xl md:text-2xl font-medium;
 	}
 	p {
 		@apply my-5;
+	}
+
+	a {
+		@apply text-accent underline;
+		color: hsl(var(--post-link));
 	}
 
 	.shiki {

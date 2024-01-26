@@ -1,17 +1,17 @@
 {
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
-  "name": "Adam Alberty",
-  "short_name": "AdamAlberty",
-  "description": "Personal website",
-  "icons": [
-    {
-      "src": "/brand/apple-icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+	"theme_color": "#000000",
+	"background_color": "#000000",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/",
+	"name": "Adam Alberty",
+	"short_name": "AdamAlberty",
+	"description": "Personal website",
+	"icons": [
+		{
+			"src": "/apple-icon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
 }

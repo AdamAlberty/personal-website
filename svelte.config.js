@@ -2,7 +2,6 @@ import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import shiki from 'shiki';
-import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
 import { cwd } from 'process';
 
@@ -24,7 +23,7 @@ const config = {
 					return `{@html \`${html}\` }`;
 				}
 			},
-			remarkPlugins: [[remarkToc, { tight: true }]],
+			remarkPlugins: [],
 			rehypePlugins: [rehypeSlug]
 		})
 	],

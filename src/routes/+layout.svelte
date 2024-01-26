@@ -1,14 +1,15 @@
 <script>
 	import '../app.scss';
 	import Header from '$components/Header.svelte';
+	import Footer from '$components/Footer.svelte';
+	import { meta } from '$res/meta';
 </script>
 
+<svelte:head>
+	<meta name="description" content={meta.description} />
+	<meta name="keywords" content={meta.keywords} />
+</svelte:head>
+
 <Header />
-
 <slot />
-
-<footer class="py-20">
-	<p class="text-center text-sm text-muted-foreground">
-		Adam Alberty &copy; {new Date().getFullYear()}
-	</p>
-</footer>
+<Footer />
