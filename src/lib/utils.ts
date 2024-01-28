@@ -1,6 +1,8 @@
+import { format } from 'date-fns';
+
 export const formatDate = (datestr: string) => {
 	try {
-		return new Date(datestr).toLocaleDateString('en');
+		return format(new Date(datestr), 'M/dd/yyyy');
 	} catch (err) {
 		return '--/--/----';
 	}
