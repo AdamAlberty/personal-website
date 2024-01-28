@@ -33,7 +33,7 @@
 	</div>
 
 	<!-- Post -->
-	<div class="post leading-loose md:text-lg mt-[5vh]">
+	<div class="post">
 		<svelte:component this={data.content} />
 	</div>
 </article>

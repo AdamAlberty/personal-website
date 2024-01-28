@@ -74,6 +74,8 @@ a:hover {
 }
 
 .post {
+	@apply leading-loose md:text-xl mt-[5vh];
+
 	h1 {
 		@apply my-7 -mt-32 pt-40 text-2xl md:text-3xl font-medium;
 	}
@@ -96,5 +98,13 @@ a:hover {
 	img {
 		margin: 0 auto;
 		@apply mt-10;
+	}
+
+	ul {
+		@apply list-disc list-outside ml-5;
+	}
+
+	p code {
+		@apply bg-muted border rounded-lg px-2;
 	}
 }
