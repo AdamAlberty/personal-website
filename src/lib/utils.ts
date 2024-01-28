@@ -1,6 +1,6 @@
-export const formatDate = (str: string) => {
+export const formatDate = (datestr: string) => {
 	try {
-		return new Date().toLocaleDateString('en');
+		return new Date(datestr).toLocaleDateString('en');
 	} catch (err) {
 		return '--/--/----';
 	}
