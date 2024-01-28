@@ -48,10 +48,6 @@ a:hover {
 	color: hsl(var(--link));
 }
 
-a:focus {
-	outline: 1px solid hsl(var(--accent-light));
-}
-
 .text-gradient {
 	background: linear-gradient(
 		to right,

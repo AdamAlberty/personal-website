@@ -6,3 +6,11 @@ export type Post = {
 	categories: string[];
 	published: boolean;
 };
+
+export type Project = {
+	name: string;
+	description: string;
+	tags: string[];
+	repository?: string;
+	website?: string;
+};
