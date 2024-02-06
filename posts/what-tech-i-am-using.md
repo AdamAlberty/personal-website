@@ -36,7 +36,7 @@ I'am using **Firefox Developer Edition**. It works great for me. Here are the ex
 
 ## Computer
 
-I am using desktop PC for working. I got it in 2018 and it still works just as well. Over the years I have upgraded RAM and SSD. Here are the specs:
+I am using desktop PC for working. Over the years I have upgraded RAM and SSD. Here are the specs:
 
 - CPU: Intel i5 8600k
 - RAM: 16GB 3600MHz
@@ -50,7 +50,3 @@ I am using desktop PC for working. I got it in 2018 and it still works just as w
 ## Monitor
 
 **27" 1440p 144Hz Asus**. It works really well. I currently have single monitor setup because I feel like if I had more monitors I would be more distracted and at the end it would hurt my productivity.
-
-## Chair
-
-**MARKUS** from Ikea. It's comfortable to sit in for me.
