@@ -31,21 +31,8 @@
 	--font-sans: 'Inter Variable';
 }
 
-::selection {
-	background-color: #bada55;
-	color: #000;
-}
-
 * {
 	border-color: hsl(var(--border));
-}
-
-a {
-	@apply transition-colors;
-}
-
-a:hover {
-	color: hsl(var(--link));
 }
 
 .text-gradient {

@@ -30,7 +30,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: 'This website :)',
-		description: `This is probably a 5th makeover of my personal website. This time I've bet on simplicity and readability.`,
+		description: `This is probably a 5th makeover of my personal website. This time I've bet on simplicity and readability. I have used Sveltekit and Go for blog content.`,
 		repository: 'https://github.com/AdamAlberty/personal-website',
 		website: 'https://adamalberty.com',
 		tags: ['Sveltekit', 'Tailwind']

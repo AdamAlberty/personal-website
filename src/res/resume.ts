@@ -74,7 +74,8 @@ export const resume: Resume = {
 		}
 	],
 	languages: [
+		{ name: 'Slovak', level: 'C2 - native' },
 		{ name: 'English', level: 'C2' },
-		{ name: 'Slovak', level: 'C2 - native' }
+		{ name: 'Spanish', level: 'A1' }
 	]
 };

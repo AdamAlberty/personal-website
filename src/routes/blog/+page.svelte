@@ -15,7 +15,7 @@
 	<title>Blog - Adam Alberty</title>
 </svelte:head>
 
-<main class="mx-auto max-w-screen-md p-8 py-[10vh]">
+<main class="mx-auto max-w-screen-xl p-8 py-[10vh]">
 	<h1 class="text-2xl">Latest posts</h1>
 	<p class="text-muted-foreground text-lg mt-1">
 		This is a blog where I try to write about various topics
