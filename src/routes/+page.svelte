@@ -1,7 +1,12 @@
 <script lang="ts">
 	import ProjectCard from '$components/ProjectCard.svelte';
+	import { meta } from '$res/meta';
 	import { projects } from '$res/projects';
 </script>
+
+<svelte:head>
+	<title>{meta.title}</title>
+</svelte:head>
 
 <main class="py-[10vh]">
 	<header class="mx-auto max-w-screen-xl p-8 pb-32">

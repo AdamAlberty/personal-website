@@ -35,6 +35,11 @@
 	border-color: hsl(var(--border));
 }
 
+::selection {
+	background-color: hsl(225, 25%, 16%);
+	color: hsl(224, 61%, 59%);
+}
+
 .text-gradient {
 	background: linear-gradient(
 		to right,

@@ -10,6 +10,12 @@ type Contact = {
 	copy?: boolean;
 };
 
+export let monero = {
+	walletAddress:
+		'45U3VE13aDw7pEtMKHJJVj4J69YaYQVyL1YcwCGR4hVrPo8yC41F9ZeZJSeRxVcq18H34RkaXhqJJFZYRjFurFWrBs6pH5j',
+	qrCodeImage: '/monero-qr.png'
+};
+
 export const contacts: Contact[] = [
 	{
 		icon: MailIcon,
@@ -18,18 +24,13 @@ export const contacts: Contact[] = [
 		copy: true
 	},
 	{
-		icon: LinkedinIcon,
-		name: 'LinkedIn',
-		link: 'https://linkedin.com/in/adamalberty'
-	},
-	{
-		icon: TwitterIcon,
-		name: 'Twitter',
-		link: 'https://twitter.com/adamalberty'
-	},
-	{
 		icon: GithubIcon,
 		name: 'GitHub',
 		link: 'https://github.com/AdamAlberty'
+	},
+	{
+		icon: LinkedinIcon,
+		name: 'LinkedIn',
+		link: 'https://linkedin.com/in/adamalberty'
 	}
 ];
