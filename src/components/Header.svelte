@@ -1,8 +1,12 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import IconMenu from '~icons/lucide/Menu';
 
 	let menuOpen = false;
+	afterNavigate(() => {
+		menuOpen = false;
+	});
 </script>
 
 <header class="sticky top-0 bg-background/80 backdrop-blur border-b">

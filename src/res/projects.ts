@@ -10,7 +10,7 @@ export const projects: Project[] = [
 	{
 		name: 'Discord Engagement Tweeter',
 		description:
-			'Discord bot that watches for reactions to messages and tweets the message if it got popular',
+			'Discord bot that watches for reactions to messages and tweets the message if it gets popular. Written with Discordgo package for Go.',
 		repository: 'https://github.com/AdamAlberty/discord-engagement-tweeter',
 		tags: ['Go', 'Discordgo', 'X API']
 	},
@@ -30,7 +30,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: 'This website :)',
-		description: `This is probably a 5th makeover of my personal website. This time I've bet on simplicity and readability. I have used Sveltekit and Go for blog content.`,
+		description: `Probably a 5th makeover of my personal website. This time I've bet on simplicity and readability. I have used Sveltekit for "frontend" and Go with Postgres for blog content.`,
 		repository: 'https://github.com/AdamAlberty/personal-website',
 		website: 'https://adamalberty.com',
 		tags: ['Sveltekit', 'Tailwind']
