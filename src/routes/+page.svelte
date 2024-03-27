@@ -10,7 +10,7 @@
 
 <main class="py-[10vh]">
 	<header class="mx-auto max-w-screen-xl p-8 pb-32">
-		<img class="w-20 h-20 mb-10" alt="The project logo" src="/logo.svg" />
+		<img class="w-20 h-20 mb-10 invert dark:invert-0" alt="The project logo" src="/logo.svg" />
 		<h1 class="text-3xl font-medium">
 			<span class="text-gradient md:text-4xl">Adam Alberty</span>
 		</h1>

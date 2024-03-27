@@ -2,6 +2,7 @@
 	import { afterNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import IconMenu from '~icons/lucide/Menu';
+	import ThemeSelect from './ThemeSelect.svelte';
 
 	let menuOpen = false;
 	afterNavigate(() => {
@@ -9,15 +10,19 @@
 	});
 </script>
 
-<header class="sticky top-0 bg-background/80 backdrop-blur border-b">
+<header class="z-10 sticky top-0 bg-background/80 backdrop-blur border-b">
 	<div class="flex items-center p-5 justify-between mx-auto max-w-screen-2xl relative">
 		<a
 			href="/"
 			aria-label="Go to homepage"
 			class="flex items-center gap-5 shrink-0 outline-none relative group"
 		>
-			<img class="w-10 h-10" alt="site logo - 3 ellipses forming a letter A" src="/logo.svg" />
-			<div class="text-xl font-mono font-bold">Adam Alberty</div>
+			<img
+				class="w-10 h-10 invert dark:invert-0"
+				alt="site logo - 3 ellipses forming a letter A"
+				src="/logo.svg"
+			/>
+			<div class="text-xl font-medium">Adam Alberty</div>
 		</a>
 
 		<button
@@ -48,6 +53,7 @@
 				class:bg-muted={$page.url.pathname === '/contact'}
 				class="rounded-lg p-1 px-3 outline-none focus:bg-muted hover:bg-muted">Contact</a
 			>
+			<ThemeSelect />
 		</nav>
 	</div>
 </header>

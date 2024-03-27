@@ -31,6 +31,10 @@
 	<meta name="twitter:image" content={`${meta.site}/open-graph.png`} />
 </svelte:head>
 
-<Header />
-<slot />
-<Footer />
+<div class="grid grid-rows-[auto_1fr_auto] min-h-screen w-full">
+	<Header />
+	<div class="w-full">
+		<slot />
+	</div>
+	<Footer />
+</div>
